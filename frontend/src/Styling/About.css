@@ -1,0 +1,298 @@
+
+
+/* General Styling */
+.about-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f7fafa;
+    padding: 2rem;
+  }
+  
+  /* Hero Section */
+  .about-hero {
+    margin-top: 4rem;
+    text-align: center;
+    background: linear-gradient(to right, #00bcd4, #4caf50);
+    color: #fff;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-hero h1 {
+    font-size: 3rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+  }
+  
+  .cta-button {
+    background: #fff;
+    color: #00bcd4;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bolder;
+  }
+  .Link{
+    text-decoration: none;
+    color: #00bcd4;
+
+  }
+  .cta-button:hover {
+    background: #4caf50;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Environmental Challenges Section */
+  .about-challenges {
+    background: #abcfd4;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+  }
+  
+  .about-challenges h2 {
+    margin-bottom: 1rem;
+    color: #00695c;
+    font-size: 2rem;
+  }
+  
+  .about-challenges p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-challenges ul {
+    list-style: square;
+    margin-left: 2rem;
+  }
+  
+  .about-challenges li {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Mission Section */
+  .about-mission {
+    background: #eee0a4;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-mission h2 {
+    margin-bottom: 1rem;
+    color: #00bcd4;
+  }
+  
+  .about-mission p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+ 
+  
+  /* Tools Section */
+  .about-tools {
+    background: #b0e7b2;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+  }
+  
+  .about-tools h2 {
+    margin-bottom: 0.5rem;
+    color: #ff9800;
+  }
+
+  .about-tools p{
+    margin-bottom: 1rem;
+  }
+  
+  .tools-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .tool-card {
+    background: #ffeb3b;
+    color: #333;
+    padding: 2rem;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tool-card h3 {
+    font-size: 1.6rem;
+  }
+  
+  .tool-card p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Real-Time Data Section */
+  .about-data {
+    background: #f0d6ec;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+  }
+  
+  .about-data p{
+    margin-bottom: 0.7rem;
+  }
+
+  .about-data h2 {
+    color: #ff5722;
+    margin-bottom: 1rem;
+  }
+  
+  .about-data ul {
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  .about-data li {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Call to Action Section */
+  .about-cta {
+    background: #4caf50;
+    padding: 3rem 2rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: 10px;
+  }
+  
+  .about-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-cta .cta-button {
+    background: #fff;
+    color: #4caf50;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 0.5rem;
+  }
+  .Link2{
+    text-decoration: none;
+    color: #4caf50;
+  }
+  
+  .about-cta .cta-button:hover {
+    background: #86e089;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .tools-container,
+    .stats-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tool-card,
+    .stat-card {
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+  
+    .about-hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-hero p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 0.8rem 2rem;
+    }
+  
+    .about-challenges ul {
+      margin-left: 0;
+    }
+  
+    .about-challenges li {
+      font-size: 1.1rem;
+    }
+  
+    .about-impact h2,
+    .about-tools h2,
+    .about-data h2,
+    .about-cta h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about-mission h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about-mission p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media(max-width:500px){
+    .about-hero h1 {
+      font-size: 2rem;
+    }
+    .about-challenges li {
+      font-size: 0.9rem;
+    }
+    .about-impact h2,
+    .about-tools h2,
+    .about-data h2,
+    .about-cta h2 {
+      font-size: 1.5rem;
+    }
+    .about-mission h2 {
+      font-size: 1.4rem;
+    }
+    .about-mission p {
+      font-size: 0.9rem;
+    }
+    .stats-container h3{
+      font-size: 1.2rem;
+    }
+    .stats-container p{
+      font-size: 1rem;
+    }
+    .tool-card h3{
+      font-size: 1.3rem;
+    }
+    .tool-card p{
+      font-size: 0.9rem;
+    }
+    .tools-container{
+      
+      padding: 0;
+    }
+    .about-challenges h2{
+      font-size: 1.4rem;
+    }
+  }
+  

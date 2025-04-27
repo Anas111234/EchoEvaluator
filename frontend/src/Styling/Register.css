@@ -1,0 +1,304 @@
+
+.signup-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 50%, #FBC2EB 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 0.8rem;
+}
+
+.login-form{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 50%, #FBC2EB 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+  
+form{
+    background: linear-gradient(rgb(100, 223, 100),rgb(112, 112, 216));
+    border-radius: 0.6rem;
+    padding: 1rem;
+    height: min-content;
+    width: 30rem;
+    line-height: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+form input{
+   font-weight: 500;
+    margin-bottom: 0.7rem;
+    outline: none;
+    /* border-radius: 0.7rem; */
+    padding: 0.3rem;
+    width: 90%;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+   
+}
+
+.error{
+    font-size: 1rem;
+    color: red;
+   margin-top: 0.2rem;
+   padding-bottom: 1rem;
+   text-align: center;
+}
+
+select{
+    margin-bottom: 0.7rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 550;
+    padding: 0.2rem;
+    background-color: transparent;
+    border: 1px solid grey;
+    outline: none;
+    color: rgb(80, 75, 75);
+}
+option{
+    margin-bottom: 0.7rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 550;
+    padding: 0.2rem;
+    background-color: transparent;
+    border: 1px solid grey;
+    outline: none;
+    color: rgb(141, 127, 127);
+
+}
+
+.signUp{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: #007BFF;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+    border: none;
+    transition: all 0.3s ease-in-out; 
+}
+
+.signUp:hover{
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+.Login{
+    text-decoration: none;
+    width: 14rem;
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+    border: none;
+    transition: all 0.3s ease-in-out; 
+    margin-bottom: 1rem;
+}
+
+.Login:hover{
+    background-color: rgba(8, 8, 8, 0.959);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    color: #2C3E50;
+}
+
+
+
+.para1{
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #041722;
+}
+
+p{
+    color:black;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.remember-forget{
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot-password{
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    margin-right: 2rem;
+}
+
+.forgot-password:hover{
+    text-decoration: underline;
+}
+
+.rememberme {
+    display: flex;
+    align-items: center;  /* Vertically align the items in the center */
+  }
+  
+  .rememberme input {
+    margin-right: 5px; 
+    margin-bottom: 1.2rem;
+  }
+  .rememberme p{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.1rem;
+  }
+
+  .rememberme span{
+    margin-left: 0.3rem;
+  }
+
+  .security-heading{
+    padding-top: 1rem;
+  }
+  .security-question{
+    font-weight: 500;
+    padding: 1.5rem 0 0 0;
+  }
+  
+  select option {
+    font-size: 14px;
+    width: 60%;
+  }
+  .messages{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+@media (max-width: 620px){
+    .heading{
+        font-size: 2rem;
+    }
+    form{
+        width: 20rem;
+    }
+    .signUp{
+        text-align: center;
+        width:15rem;
+        margin-left: 13%;
+    }
+    .error{
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 420px){
+    .heading{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .security-heading{
+        font-size: 1.5rem;
+    }
+    form{
+        width: 16rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    .signUp{
+        text-align: center;
+        width:12rem;
+        margin-left: 13%;
+    }
+    .Login{
+        width: 12rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .error{
+        font-size: 0.8rem;
+    }
+    .rememberme p{
+        font-size: 0.8rem;
+    }
+    .forgot-password{
+        font-size: 0.75rem;
+        margin-right: 1rem;
+    }
+    .rememberme input {
+        margin-bottom: 1.1rem;
+    }
+}
+
+@media (max-width: 320px){
+    .heading{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    form{
+        border: none;
+        width: 14rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    .signUp{
+        text-align: center;
+        width:9rem;
+        margin-left: 13%;
+    }
+    .Login{
+        width: 9rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .error{
+        font-size: 0.7rem;
+    }
+    .rememberme p{
+        font-size: 0.7rem;
+    }
+    .forgot-password{
+        font-size: 0.65rem;
+        margin-right: 0.2rem;
+    }
+    .rememberme input {
+        margin-bottom: 0.9rem;
+    }
+}
+

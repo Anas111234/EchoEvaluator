@@ -1,0 +1,344 @@
+/* General Styling */
+.learn-more-container {
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+    background-color: rgb(216, 243, 216);
+  }
+  
+  .hero-section {
+    /* text-align: center; */
+    background-color: #80ec80;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    border-radius: 0.7rem;
+  }
+  
+  .hero-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Scientists Section */
+  .scientists-section {
+    padding: 2rem 0;
+    background-color: #bee8ee;
+    border-radius: 0.7rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scientists-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .scientist-card {
+    width: 300px;
+    text-align: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .scientist-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .scientist-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .scientist-card p {
+    color: #555;
+  }
+  
+  .scientist-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Article Section */
+  .article-section {
+    padding: 3rem 0;
+    background-color: #e2c750;
+    color: white;
+    padding:1rem 2rem;
+    border-radius: 0.7rem;
+    box-shadow: #333;
+  }
+  
+  .article-content p {
+    font-size: 1.1rem;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .article-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Graph Section */
+  .graph-section {
+    background-color: rgb(170, 217, 235);
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    border-radius: 0.7rem;
+    align-items: center;
+    padding: 1.5rem;
+  }
+ 
+  .graph{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .graph-container{
+    width: 50%;
+  }
+  .text1{
+    width: 40%;
+    margin-right: 2rem;
+  }
+  .graph-container img{
+    border-radius: 0.7rem;
+    width: 90%;
+  }
+  
+  /* Carbon Sources Section */
+  .carbon-sources-section {
+    background-color: rgb(206, 159, 145);
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .text1 p{
+    line-height: 2rem;
+  }
+
+  .section-title{
+    margin: 1rem 0 3rem 0;
+  }
+
+  .carbon-sources-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .carbon-sources-container img{
+    border-radius: 0.7rem;
+    width: 70%;
+  }
+  
+  
+  
+  /* Info Section */
+  .info-section {
+    padding: 3rem 0;
+    background-color: #f9f9f9;
+    margin-bottom: 2rem;
+    border-radius: 0.7rem;
+  }
+  
+  .info-section p {
+    padding:1rem 2rem;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    text-align: center;
+    padding: 2rem 1.2rem;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 0.7rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-button {
+    font-size: 1.2rem;
+    background-color: #e74c3c;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .Link3{
+    color: white;
+    text-decoration: none;
+  }
+  .cta-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .graph-section p,
+  .carbon-sources-section p,
+  .vlog-section p{
+    margin-top: 1.5rem;
+  }
+
+  .section-title,
+  .scientists-section h2,
+  .scientist-card h3,
+  .article-section h2,
+  .info-section h2 {
+    text-decoration: underline;
+  }
+
+  /*Responsive*/
+
+  @media(max-width:1100px){
+    .text1 p{
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+    .text1{
+      margin-right: 1rem;
+    }
+  }
+
+  @media(max-width:960px){
+    .graph-container{
+      width: 70%;
+    }
+    .text1 p{
+      font-size: 1.1rem;
+    }
+
+  }
+
+  @media(max-width:860px){
+    .graph{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .graph-container{
+      width: 100%;
+    }
+    .graph-container img{
+      width: 100%;
+    }
+    .text1{
+      width: 100%;
+      margin-right: 0;
+    }
+    .text1 p{
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    .graph-container img{
+      text-align: center;
+    }
+  }
+
+  @media(max-width:730px){
+    .carbon-sources-container img{
+      width: 100%;
+    }
+   
+  }
+
+  @media(max-width:550px){
+    .hero-section h1{
+      font-size: 2.1rem;
+    }
+    .scientists-section h2{
+      font-size:1.8rem;
+    }
+    .vlog-container iframe {
+      width: 90%;
+      height: 220px;
+    }
+
+    .text1 p{
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+    }
+
+    .scientist-card {
+      width: 250px;
+      padding: 0.8rem;
+    }
+    .scientist-card img{
+      width: 175px;
+      height: 175px;
+    }
+
+  }
+
+  @media (max-width: 460px) {
+    .hero-section h1,
+    .section-title,
+    .scientists-section h2,
+    .scientist-card h3,
+    .article-section h2,
+    .info-section h2,
+    .cta-section h2 {
+      font-size: 1.4rem;
+    }
+  
+    .hero-section p,
+    .scientist-card p,
+    .article-content p,
+    .vlog-section p,
+    .info-section p,
+    .cta-section p {
+      font-size: 1.05rem;
+    }
+
+    .vlog-container iframe{
+      height: 190px;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  
