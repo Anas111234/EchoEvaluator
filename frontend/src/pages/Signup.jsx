@@ -76,7 +76,7 @@ const Signup = () => {
       // Reset email error before making the request
       setEmailError('');
       
-      const response = await axios.post('https://backend-echoevaluator-bmr9.onrender.com/auth/register', {
+      const response = await axios.post('http://localhost:3001/auth/register', {
         firstname,
         lastname,
         age,
