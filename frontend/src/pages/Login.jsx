@@ -33,7 +33,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:3001/auth/login", {
+      const response = await axios.post("https://backend-echoevaluator-bmr9.onrender.com/auth/login", {
         email,
         password,
       });
