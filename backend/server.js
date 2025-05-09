@@ -10,9 +10,9 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-origin: "https://frontend-echoevaluator-kruj.onrender.com",
-methods: ["GET", "POST"],
-credentials: true,
+  origin: "http://localhost:5173",
+  methods: ["GET", "POST"],
+  credentials: true,
 }));
 
 connectDB();
@@ -20,4 +20,4 @@ connectDB();
 app.use('/auth', authRoutes);
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(Server running on port ${PORT}));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
