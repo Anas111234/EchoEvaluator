@@ -10,7 +10,7 @@ const ResetPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://backend-echoevaluator-bmr9.onrender.com/auth/resetpassword", { token, newPassword });
+      const response = await axios.post("https://backend-echoevaluator-bmr9.onrender.com/auth/resetpassword", { token, newPassword },{ withCredentials: true });
       setMessage(response.data.message);
     } catch (error) {
       setMessage(error.response?.data?.message || "Error resetting password");
