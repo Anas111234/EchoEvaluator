@@ -85,7 +85,7 @@ const Signup = () => {
         password,
         securityQuestion,  // Send security question
         securityAnswer,    // Send security answer
-      });
+      },{ withCredentials: true });
 
       // On success, navigate to login
       if (response.status === 201) {
