@@ -44,7 +44,7 @@ const ForgotPassword = () => {
     setMessages(''); // Clear any previous messages
     setMessageType('');
     try {
-      const response = await axios.post('http://localhost:3001/auth/forgot-password', { email });
+      const response = await axios.post('https://backend-echoevaluator-bmr9.onrender.com/auth/forgot-password', { email });
       if (response.status === 200) {
         setSecurityQuestion(response.data.securityQuestion);
         setIsQuestionVisible(true);
