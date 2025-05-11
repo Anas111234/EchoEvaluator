@@ -44,7 +44,11 @@ const ForgotPassword = () => {
     setMessages(''); // Clear any previous messages
     setMessageType('');
     try {
-      const response = await axios.post('https://backend-echoevaluator-bmr9.onrender.com/auth/forgot-password', { email });
+      const response = await axios.post(
+  'https://backend-echoevaluator-bmr9.onrender.com/auth/forgot-password',
+  { email },
+  { withCredentials: true } // This ensures cookies are sent along with the request
+);
       if (response.status === 200) {
         setSecurityQuestion(response.data.securityQuestion);
         setIsQuestionVisible(true);
