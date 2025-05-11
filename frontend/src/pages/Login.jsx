@@ -36,7 +36,8 @@ const Login = () => {
       const response = await axios.post("https://backend-echoevaluator-bmr9.onrender.com/auth/login", {
         email,
         password,
-      });
+      },
+      { withCredentials: true });
 
       const { token, user } = response.data;
 
