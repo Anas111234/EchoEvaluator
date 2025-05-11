@@ -48,8 +48,19 @@ const loginUser = async (req, res) => {
     }
 
     const token = jwt.sign({ id: user._id, email: user.email }, "jwt-secret-key", { expiresIn: '20h' });
-    res.cookie('token', token, { httpOnly: true }); // Securely store token in cookies
-    res.status(200).json({ message: 'Login successful', token, user: { firstname: user.firstname, email: user.email } });
+
+    // Set token as a secure cookie
+    res.cookie('token', token, {
+      httpOnly: true,
+      secure: true,         // Ensure it's only sent over HTTPS
+      sameSite: 'None',     // Required for cross-origin cookies
+    });
+
+    res.status(200).json({
+      message: 'Login successful',
+      token,
+      user: { firstname: user.firstname, email: user.email }
+    });
   } catch (error) {
     res.status(500).json({ message: 'Error logging in', error });
   }
