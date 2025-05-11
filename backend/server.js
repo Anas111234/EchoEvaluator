@@ -10,12 +10,12 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: "https://frontend-echoevaluator-kruj.onrender.com",
+  origin: "https://frontend-echoevaluator-kruj.onrender.com",  // Your frontend URL
   methods: ["GET", "POST"],
-  credentials: true,
+  credentials: true,  // Allow cookies to be sent from the frontend
 }));
 
-app.options('*',cors());
+app.options('*', cors());
 
 connectDB();
 
